@@ -1,0 +1,105 @@
+/* ImageGenerator.css */
+.ai-image-generator {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #E0E0E0; /* Light grey text for readability on dark backgrounds */
+  max-width: 680px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+  border-radius: 12px;
+  background-color: #212121; /* Very dark grey background */
+  text-align: center;
+}
+
+.header {
+  font-size: 28px;
+  color: #E0E0E0; /* Light grey for readability */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header span {
+  color: #007aff; /* Maintaining blue for highlights */
+}
+
+.img-loading {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for lifting the image off the page */
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(33, 33, 33, 0.8); /* Dark overlay for loading */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  border: 5px solid #424242; /* Dark grey */
+  border-radius: 50%;
+  border-top: 5px solid #007aff; /* Contrast with a blue color */
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-input,
+.style-selector {
+  width: 48%; /* Adjusted to give equal space for both */
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #333; /* Dark grey border */
+  border-radius: 12px;
+  outline: none;
+  background-color: #333; /* Dark input fields */
+  color: #E0E0E0; /* Light text */
+  transition: border 0.3s ease-in-out;
+}
+
+.search-input:focus,
+.style-selector:focus {
+  border-color: #007aff; /* Maintain blue focus for visibility */
+}
+
+.generate-btn {
+  padding: 15px 25px;
+  background-color: #007aff; /* Blue button for contrast */
+  color: white;
+  text-transform: none; /* No uppercase */
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.generate-btn:hover {
+  background-color: #0056b3; /* A darker blue for hover */
+}
+
+  
