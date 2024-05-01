@@ -1,0 +1,70 @@
+/* ImageGenerator.css */
+.ai-image-generator {
+    font-family: 'Arial', sans-serif; /* Sets the font for the generator */
+    color: #333; /* Sets the text color */
+    max-width: 680px; /* Sets a max-width for the layout */
+    margin: 40px auto; /* Centers the generator on the page */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds shadow for 3D effect */
+    border-radius: 10px; /* Rounded corners for the container */
+    background-color: #ffffff; /* White background for the container */
+  }
+  
+  .header {
+    font-size: 24px; /* Larger text for the header */
+    color: #5a67d8; /* Stylish blue for the header text */
+    text-align: center; /* Center-align the header text */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  .header span {
+    color: #e53e3e; /* Red color for the span to make it stand out */
+  }
+  
+  .img-loading {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    margin-bottom: 20px; /* Space below the image container */
+  }
+  
+  .iamge img {
+    max-width: 100%; /* Makes the image responsive */
+    max-height: 300px; /* Limit the image height */
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: space-between; /* Distributes space between and around elements */
+    align-items: center; /* Vertically centers the items */
+    padding: 10px;
+  }
+  
+  .search-input {
+    width: 70%; /* Search input takes 70% of its parent width */
+    padding: 10px 15px;
+    font-size: 16px; /* Makes text inside input larger */
+    border: 2px solid #ddd; /* Border for the input */
+    border-radius: 6px; /* Rounded corners for the input */
+    outline: none; /* Removes the default focus outline */
+  }
+  
+  .search-input:focus {
+    border-color: #5a67d8; /* Changes border color on focus */
+  }
+  
+  .generate-btn {
+    padding: 10px 20px;
+    background-color: #5075b6; /* A soft blue background */
+    color: white; /* White text color */
+    text-transform: uppercase; /* Makes text uppercase */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  .generate-btn:hover {
+    background-color: #3b78d8; /* Darker shade on hover */
+  }
+  
